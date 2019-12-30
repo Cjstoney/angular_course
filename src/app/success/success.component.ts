@@ -7,4 +7,16 @@ import {Component}from '@angular/core';
 })
 
 export class SuccessComponent {
+ userName = ''
+    constructor(){
+
+    }
+
+    ngOnInit(){
+
+    }
+    onUpdateUserName(event:Event){
+        this.userName=(<HTMLInputElement>event.target).value
+        // this.userName = event
+    }
 }  
