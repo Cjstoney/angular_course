@@ -19,4 +19,10 @@ export class SuccessComponent {
         this.userName=(<HTMLInputElement>event.target).value
         // this.userName = event
     }
+
+    onNameDelete(){
+        if(this.userName !== ''){
+            this.userName = ''
+        }else(alert('You cannot delete what was never there.'))
+    }
 }  

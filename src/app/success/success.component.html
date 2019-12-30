@@ -1,4 +1,9 @@
 <label>User Name</label>
-<input type="text" class='form-control'
-(input)='onUpdateUserName($event)'>
-<p>{{userName}}</p>
+<input type="text" 
+class="form-control" 
+[(ngModel)]="userName" 
+/>
+<p>{{ userName }}</p>
+<button 
+class='btn btn-danger'
+(click)='onNameDelete()'>Remove Name</button>
